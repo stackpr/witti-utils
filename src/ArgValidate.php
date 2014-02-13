@@ -8,9 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Witti\Utils\ArgValidate;
+namespace Witti\Utils;
 
 class ArgValidate {
+  static public function getNumericCsv($csv, $positive = FALSE, $decimals = -1) {
+    return \Witti\Utils\ArgValidate\ArgValidateText::getNumericCsv($csv, $positive, $decimals);
+  }
+
   static public function getRegexPattern($regex, $mode = 'PCRE') {
     return \Witti\Utils\ArgValidate\ArgValidateText::getRegexPattern($regex, $mode);
   }
