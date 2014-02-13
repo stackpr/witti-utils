@@ -1,0 +1,25 @@
+{
+    "name":"wittiws/witti-utils",
+    "type":"library",
+    "description":"Utility classes.",
+    "keywords":[
+        "converter"
+    ],
+    "homepage":"http://www.witti.ws/project/witti-utils",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Greg Payne",
+            "email":"greg.payne@gmail.com"
+        }
+    ],
+    "require":{
+        "php":">=5.3.3"
+    },
+    "autoload":{
+        "psr-4":{
+            "Witti\\Utils\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
