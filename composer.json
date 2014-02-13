@@ -3,7 +3,7 @@
     "type":"library",
     "description":"Utility classes.",
     "keywords":[
-        "converter"
+        
     ],
     "homepage":"http://www.witti.ws/project/witti-utils",
     "license":"MIT",
