@@ -23,7 +23,7 @@ class ArgValidateText {
     }
 
     // Test for special characters.
-    $chars = '0-9\\.';
+    $chars = ',0-9\\.';
     if (!$positive) {
       $chars .= '\\-';
     }
