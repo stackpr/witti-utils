@@ -11,8 +11,8 @@
 namespace Witti\Utils;
 
 class ArgValidate {
-  static public function getNumericCsv($csv, $positive = FALSE, $decimals = -1) {
-    return \Witti\Utils\ArgValidate\ArgValidateText::getNumericCsv($csv, $positive, $decimals);
+  static public function getNumericCsv($csv, $positive = FALSE, $decimals = -1, $autocorrect = TRUE) {
+    return \Witti\Utils\ArgValidate\ArgValidateText::getNumericCsv($csv, $positive, $decimals, $autocorrect);
   }
 
   static public function getRegexPattern($regex, $mode = 'PCRE') {

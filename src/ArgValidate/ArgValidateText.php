@@ -11,7 +11,7 @@
 namespace Witti\Utils\ArgValidate;
 
 class ArgValidateText {
-  static public function getNumericCsv($csv, $positive = FALSE, $decimals = -1) {
+  static public function getNumericCsv($csv, $positive = FALSE, $decimals = -1, $autocorrect = TRUE) {
     $decimals = (int) $decimals;
     $positive = (bool) $positive;
 
@@ -38,8 +38,12 @@ class ArgValidateText {
         throw new \InvalidArgumentException("Non-numeric data detected in value list.");
       }
       if ($decimals != -1) {
-        $part = round($part, $decimals);
-        $parts[] = $part;
+        $part = (float) $part;
+        $tmp = round($part, $decimals);
+        if (!$autocorrect && $tmp != $part) {
+          throw new \InvalidArgumentException("Too many decimal points provided in value list.");
+        }
+        $parts[] = $tmp;
       }
     }
     if ($decimals != -1) {
