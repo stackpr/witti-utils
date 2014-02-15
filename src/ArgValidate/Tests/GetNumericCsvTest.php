@@ -10,6 +10,12 @@ class GetNumericCsvTest extends \PHPUnit_Framework_TestCase {
         1,
         "1,2,3,4",
       ),
+      array(
+        "1, 2, 3 , 4",
+        TRUE,
+        1,
+        "1,2,3,4",
+      ),
     );
   }
 
