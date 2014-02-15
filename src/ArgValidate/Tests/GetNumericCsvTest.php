@@ -1,4 +1,13 @@
 <?php
+/*
+ * This file is part of the Witti Utils package.
+ *
+ * (c) Greg Payne
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Witti\Utils\ArgValidate\Tests;
 use Witti\Utils\ArgValidate;
 class GetNumericCsvTest extends \PHPUnit_Framework_TestCase {
